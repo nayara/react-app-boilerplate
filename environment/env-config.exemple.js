@@ -1,0 +1,3 @@
+window.env = {
+  ENVIRONMENT: 'dev',
+};

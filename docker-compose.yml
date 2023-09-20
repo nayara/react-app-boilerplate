@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./environment/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ./environment/env-config.js:/rootFolder/env-config.js
